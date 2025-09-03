@@ -46,7 +46,7 @@ pip install -r requirements.txt
 3️⃣ Run the App
 python app.py
 Opens a Gradio interface in your browser for interactive predictions.
-
+```
 📊 Dataset Format
 dice1	dice2	dice3	total
 3	2	6	11
