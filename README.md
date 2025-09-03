@@ -1,118 +1,130 @@
-I drafted a polished, professional **README.md** for your GitHub repository at **[https://github.com/aniktanims/Dice\_Prediction](https://github.com/aniktanims/Dice_Prediction)**, optimizing clarity and usability. Let me know if you'd like to include badges (e.g., GitHub stars, forks), a project logo, or expansion of any section.
+Absolutely ✅ — I can design a **visually engaging, UI-styled README** for your repo that uses:
+
+* **Badges** for a polished look.
+* **Visual sections with emojis/icons** for readability.
+* **Screenshots/diagrams placeholders** for your Hugging Face app UI.
+* **Clear section dividers** for better navigation.
+
+Here’s a professional + stylish **README.md** draft for your `Dice_Prediction` repo:
 
 ---
 
 ````markdown
-# 🎲 Dice Prediction ML
+<h1 align="center">🎲 Dice Prediction ML App</h1>
 
-A refined Python machine learning application that predicts the next outcome of a **three-dice roll** using historical roll data. Employing advanced algorithms and a large dataset, this model identifies patterns and predicts future results with improved accuracy and interpretability.
+<p align="center">
+  <b>Machine Learning powered predictor for 3-dice rolls, trained on large datasets to uncover hidden patterns in randomness.</b>
+</p>
 
----
-
-##  Features
-
-- **History-based prediction** of three-dice rolls using ML algorithms.  
-- Supports multiple modeling strategies (e.g., Random Forest, ensembles).  
-- Trained on extensive datasets for reliability and pattern detection.  
-- Modular codebase—easy to extend and integrate into other workflows.  
-- Ideal for probability analysis, simulations, academic exploration, and more.
-
----
-
-##  Live Demo (Hugging Face Space)
-
-![Hugging Face Space](https://img.shields.io/badge/Hugging%20Face-Space-blue?logo=huggingface)  
-[Launch the live demo](https://huggingface.co/spaces/aniktanims/Dice_Prediction_MTA)
+<p align="center">
+  <a href="https://github.com/aniktanims/Dice_Prediction/stargazers"><img src="https://img.shields.io/github/stars/aniktanims/Dice_Prediction?style=social" alt="GitHub Stars"></a>
+  <a href="https://github.com/aniktanims/Dice_Prediction/network/members"><img src="https://img.shields.io/github/forks/aniktanims/Dice_Prediction?style=social" alt="GitHub Forks"></a>
+  <a href="https://huggingface.co/spaces/aniktanims/Dice_Prediction_MTA"><img src="https://img.shields.io/badge/🤗-Hugging%20Face-blue" alt="Hugging Face"></a>
+  <a href="https://github.com/aniktanims/Dice_Prediction/blob/main/LICENSE"><img src="https://img.shields.io/github/license/aniktanims/Dice_Prediction" alt="License"></a>
+</p>
 
 ---
 
-##  Installation & Setup
+## 🌐 Live Demo  
+🚀 Try it instantly on Hugging Face Spaces:  
+👉 [**Dice Prediction App**](https://huggingface.co/spaces/aniktanims/Dice_Prediction_MTA)
 
-**Clone the repository:**
+<p align="center">
+  <img src="docs/demo-ui.png" alt="App Demo Screenshot" width="600">
+  <br>
+  <i>Interactive Gradio UI where users input dice history and get predictions.</i>
+</p>
 
+---
+
+## ✨ Features  
+
+✅ Predicts the next **3-dice roll outcome** based on history  
+✅ Trained on **large datasets** for accuracy  
+✅ Supports **multiple ML models** (Random Forest, ensemble, etc.)  
+✅ **Fairness & bias detection** metrics included  
+✅ Deployable via **Hugging Face Spaces** or local run  
+
+---
+
+## ⚡ Quick Start  
+
+### 1️⃣ Clone the Repository
 ```bash
 git clone https://github.com/aniktanims/Dice_Prediction.git
 cd Dice_Prediction
 ````
 
-**Install dependencies:**
+### 2️⃣ Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
----
-
-## Usage
-
-Run the prediction script through the command line:
+### 3️⃣ Run Locally
 
 ```bash
-python predict.py --input data/history.csv
+python app.py
 ```
 
-### Example options:
-
-* `--model randomforest` — Use Random Forest model.
-* `--verbose` — Enable detailed logging for diagnostics.
-* `--output predictions.csv` — Save prediction results to file.
+The app will launch in your browser via Gradio interface.
 
 ---
 
-## Dataset Format
-
-Expected CSV structure:
+## 📊 Dataset Format
 
 | dice1 | dice2 | dice3 | total |
 | ----- | ----- | ----- | ----- |
 | 3     | 2     | 6     | 11    |
 
-* **dice1**, **dice2**, **dice3**: Individual dice results.
-* **total**: Optional; auto-corrected if mismatched.
+* **dice1**, **dice2**, **dice3** → values of each die (1–6)
+* **total** → optional; auto-corrected if mismatched
 
 ---
 
-## Architecture Description
+## 🧠 Model Architecture
 
-The core predictive model leverages:
+<p align="center">
+  <img src="docs/model-architecture.png" alt="Model Architecture Diagram" width="650">
+</p>
 
-* **Random Forest** for robust classification.
-* **Ensemble techniques** combining probabilistic and statistical metrics.
-* **Bias adjustment** and fairness evaluation (e.g., via Dirichlet distributions and runs test).
-* **Optionally**, support for continuous learning via online or batch updates.
-
----
-
-## Contribution Guidelines
-
-Your contributions are valuable! Follow these steps:
-
-1. **Fork** the repository.
-2. Create a **feature branch** (e.g., `feature-enhanced-ui`).
-3. Commit your changes and push them.
-4. Open a **Pull Request** describing the enhancement or fix.
+* **Random Forest**: Core prediction engine
+* **Markov Chains**: Captures sequential patterns
+* **Bias Adjustment**: Fairness metrics & anomaly detection
+* **Ensemble Method**: Combines probabilistic and ML insights
 
 ---
 
-## License
+## 🚀 Roadmap
 
-This project is released under the **MIT License**.
-
----
-
-## Quick Links
-
-* [Hugging Face Live Demo](https://huggingface.co/spaces/aniktanims/Dice_Prediction_MTA)
-* [GitHub Issues](https://github.com/aniktanims/Dice_Prediction/issues) (for bugs, feedback, or feature requests)
-* [GitHub Discussions](https://github.com/aniktanims/Dice_Prediction/discussions) (for ideas, Q\&A, collaboration)
+* [ ] Add Deep Learning models (LSTMs, Transformers)
+* [ ] Export Pretrained Models for reuse
+* [ ] Build Web Dashboard with analytics & visualizations
+* [ ] CI/CD integration for automated deployments
 
 ---
 
-### Why This README Works
+## 🤝 Contributing
 
-* **Concise and Organized**: Clear sections for features, setup, usage, and contribution.
-* **Professional Appearance**: Badge and links guide users to live demo and project resources.
-* **Technical Depth**: Highlights underlying model structure and dataset requirements.
-* **Future-Proof**: Encourages contributions and provides easy navigation for collaborators.
+We welcome contributions!
 
-Let me know if you're looking to also add a license badge, expand the example usage section, or integrate CI/CD or Docker instructions—I’m happy to assist.
+1. Fork the repo
+2. Create your feature branch (`git checkout -b feature/awesome`)
+3. Commit your changes (`git commit -m 'Added awesome feature'`)
+4. Push to the branch (`git push origin feature/awesome`)
+5. Open a Pull Request
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License**.
+See the [LICENSE](LICENSE) file for details.
+
+---
+
+<p align="center">Made with ❤️ by <a href="https://github.com/aniktanims">Anik Tanim</a></p>
+```
+
+---
+
