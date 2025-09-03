@@ -45,51 +45,65 @@ cd Dice_Prediction
 pip install -r requirements.txt
 3️⃣ Run the App
 python app.py
-Opens a Gradio interface in your browser for interactive predictions.
 ```
-📊 Dataset Format
-dice1	dice2	dice3	total
-3	2	6	11
+Opens a Gradio interface in your browser for interactive predictions.
 
-dice1, dice2, dice3: individual dice rolls (1–6)
+## 📊 Dataset Format
 
-total: optional; auto-corrected if mismatched
+| dice1 | dice2 | dice3 | total |
+| ----- | ----- | ----- | ----- |
+| 3     | 2     | 6     | 11    |
 
-🧠 Model Architecture
-<p align="center"> <img src="docs/model-architecture.png" alt="Model Architecture Diagram" width="650"> </p>
+* `dice1`, `dice2`, `dice3`: individual dice rolls (1–6)
+* `total`: optional; auto-corrected if mismatched
 
-Random Forest: Core prediction engine
+---
 
-Markov Chains: Captures sequential patterns
+## 🧠 Model Architecture
 
-Bias Adjustment: Fairness & anomaly detection
+<p align="center">
+  <img src="docs/model-architecture.png" alt="Model Architecture Diagram" width="650">
+</p>
 
-Ensemble: Combines probabilistic and ML insights
+* **Random Forest**: Core prediction engine
+* **Markov Chains**: Captures sequential patterns
+* **Bias Adjustment**: Fairness & anomaly detection
+* **Ensemble**: Combines probabilistic and ML insights
 
-🚀 Roadmap
+---
 
- Add Deep Learning models (LSTMs, Transformers)
+## 🚀 Roadmap
 
- Export pretrained models
+* [ ] Add Deep Learning models (LSTMs, Transformers)
+* [ ] Export pretrained models
+* [ ] Build Web Dashboard with analytics & visualization
+* [ ] CI/CD integration for automated deployments
 
- Build Web Dashboard with analytics & visualization
+---
 
- CI/CD integration for automated deployments
-
-🤝 Contributing
+## 🤝 Contributing
 
 We welcome contributions!
 
-Fork the repo
+1. Fork the repo
+2. Create a **feature branch** (`git checkout -b feature-name`)
+3. Commit changes (`git commit -m "Add feature"`)
+4. Push to branch (`git push origin feature-name`)
+5. Open a **Pull Request**
 
-Create a feature branch (git checkout -b feature-name)
+---
 
-Commit changes (git commit -m "Add feature")
+## 📜 License
 
-Push to branch (git push origin feature-name)
+This project is licensed under the **MIT License**.
 
-Open a Pull Request
+---
 
-📜 License
+<p align="center">Made with ❤️ by <a href="https://github.com/aniktanims">Mostofa Tanim Anik</a></p>
+```
 
-This project is licensed under the MIT License.
+---
+
+
+Do you want me to **create these two images now**?
+
