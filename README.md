@@ -1,19 +1,7 @@
-Absolutely ✅ — I can design a **visually engaging, UI-styled README** for your repo that uses:
-
-* **Badges** for a polished look.
-* **Visual sections with emojis/icons** for readability.
-* **Screenshots/diagrams placeholders** for your Hugging Face app UI.
-* **Clear section dividers** for better navigation.
-
-Here’s a professional + stylish **README.md** draft for your `Dice_Prediction` repo:
-
----
-
-````markdown
-<h1 align="center">🎲 Dice Prediction ML App</h1>
+<h1 align="center">🎲 Dice Prediction ML</h1>
 
 <p align="center">
-  <b>Machine Learning powered predictor for 3-dice rolls, trained on large datasets to uncover hidden patterns in randomness.</b>
+  Predict the next outcome of a 3-dice game using Machine Learning trained on historical rolls.
 </p>
 
 <p align="center">
@@ -25,106 +13,83 @@ Here’s a professional + stylish **README.md** draft for your `Dice_Prediction`
 
 ---
 
-## 🌐 Live Demo  
-🚀 Try it instantly on Hugging Face Spaces:  
-👉 [**Dice Prediction App**](https://huggingface.co/spaces/aniktanims/Dice_Prediction_MTA)
+## 🌐 Live Demo
+Try it instantly on Hugging Face Spaces:  
+[**Launch Dice Prediction App**](https://huggingface.co/spaces/aniktanims/Dice_Prediction_MTA)
 
 <p align="center">
-  <img src="docs/demo-ui.png" alt="App Demo Screenshot" width="600">
+  <img src="ui.PNG" alt="App UI Screenshot">
   <br>
-  <i>Interactive Gradio UI where users input dice history and get predictions.</i>
+  <i>Interactive UI: input historical rolls and get predicted next roll.</i>
 </p>
 
 ---
 
-## ✨ Features  
+## ✨ Features
 
-✅ Predicts the next **3-dice roll outcome** based on history  
-✅ Trained on **large datasets** for accuracy  
-✅ Supports **multiple ML models** (Random Forest, ensemble, etc.)  
-✅ **Fairness & bias detection** metrics included  
-✅ Deployable via **Hugging Face Spaces** or local run  
+- Predicts the next **3-dice roll outcome** using historical data  
+- Supports **multiple ML models** (Random Forest, Ensemble)  
+- **Bias detection & fairness metrics** included  
+- **Large dataset** support for improved accuracy  
+- **Deployable** via Hugging Face Spaces or local Python script  
 
 ---
 
-## ⚡ Quick Start  
+## ⚡ Quick Start
 
-### 1️⃣ Clone the Repository
+### 1️⃣ Clone the Repo
 ```bash
 git clone https://github.com/aniktanims/Dice_Prediction.git
 cd Dice_Prediction
-````
-
-### 2️⃣ Install Dependencies
-
-```bash
+2️⃣ Install Dependencies
 pip install -r requirements.txt
-```
-
-### 3️⃣ Run Locally
-
-```bash
+3️⃣ Run the App
 python app.py
-```
+Opens a Gradio interface in your browser for interactive predictions.
 
-The app will launch in your browser via Gradio interface.
+📊 Dataset Format
+dice1	dice2	dice3	total
+3	2	6	11
 
----
+dice1, dice2, dice3: individual dice rolls (1–6)
 
-## 📊 Dataset Format
+total: optional; auto-corrected if mismatched
 
-| dice1 | dice2 | dice3 | total |
-| ----- | ----- | ----- | ----- |
-| 3     | 2     | 6     | 11    |
+🧠 Model Architecture
+<p align="center"> <img src="docs/model-architecture.png" alt="Model Architecture Diagram" width="650"> </p>
 
-* **dice1**, **dice2**, **dice3** → values of each die (1–6)
-* **total** → optional; auto-corrected if mismatched
+Random Forest: Core prediction engine
 
----
+Markov Chains: Captures sequential patterns
 
-## 🧠 Model Architecture
+Bias Adjustment: Fairness & anomaly detection
 
-<p align="center">
-  <img src="docs/model-architecture.png" alt="Model Architecture Diagram" width="650">
-</p>
+Ensemble: Combines probabilistic and ML insights
 
-* **Random Forest**: Core prediction engine
-* **Markov Chains**: Captures sequential patterns
-* **Bias Adjustment**: Fairness metrics & anomaly detection
-* **Ensemble Method**: Combines probabilistic and ML insights
+🚀 Roadmap
 
----
+ Add Deep Learning models (LSTMs, Transformers)
 
-## 🚀 Roadmap
+ Export pretrained models
 
-* [ ] Add Deep Learning models (LSTMs, Transformers)
-* [ ] Export Pretrained Models for reuse
-* [ ] Build Web Dashboard with analytics & visualizations
-* [ ] CI/CD integration for automated deployments
+ Build Web Dashboard with analytics & visualization
 
----
+ CI/CD integration for automated deployments
 
-## 🤝 Contributing
+🤝 Contributing
 
 We welcome contributions!
 
-1. Fork the repo
-2. Create your feature branch (`git checkout -b feature/awesome`)
-3. Commit your changes (`git commit -m 'Added awesome feature'`)
-4. Push to the branch (`git push origin feature/awesome`)
-5. Open a Pull Request
+Fork the repo
 
----
+Create a feature branch (git checkout -b feature-name)
 
-## 📜 License
+Commit changes (git commit -m "Add feature")
 
-This project is licensed under the **MIT License**.
-See the [LICENSE](LICENSE) file for details.
+Push to branch (git push origin feature-name)
 
----
+Open a Pull Request
 
-<p align="center">Made with ❤️ by <a href="https://github.com/aniktanims">Anik Tanim</a></p>
-```
+📜 License
 
----
-
+This project is licensed under the MIT License.
